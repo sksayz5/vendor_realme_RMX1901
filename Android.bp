@@ -38,25 +38,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libaudio_log_utils",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libaudio_log_utils.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libaudio_log_utils.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libplatformconfig",
 	owner: "realme",
 	strip: {
@@ -68,44 +49,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libplatformconfig.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdm-disp-vndapis",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsdm-disp-vndapis.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libthermalclient",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -128,86 +71,6 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
-	prefer: true,
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.api@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/com.quicinc.cne.api@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.api@1.1",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/com.quicinc.cne.api@1.1.so"],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.constants@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.constants@2.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@2.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.quicinc.cne.constants@2.1",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@2.1.so"],
-		},
-	},
-	compile_multilib: "64",
 	prefer: true,
 	product_specific: true,
 }
@@ -267,21 +130,10 @@ android_app_import {
 }
 
 android_app_import {
-	name: "RfToolkit",
-	owner: "realme",
-	apk: "proprietary/vendor/app/RfToolkit/RfToolkit.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "TimeService",
 	owner: "realme",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
+	certificate: ":timeservice_app_cert",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -289,53 +141,20 @@ android_app_import {
 }
 
 android_app_import {
-	name: "com.qualcomm.qti.improvetouch.service",
+	name: "PowerOffAlarm",
 	owner: "realme",
-	apk: "proprietary/vendor/app/com.qualcomm.qti.improvetouch.service/com.qualcomm.qti.improvetouch.service.apk",
+	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
+	product_specific: true,
 }
 
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "realme",
 	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "datastatusnotification",
-	owner: "realme",
-	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "embms",
-	owner: "realme",
-	apk: "proprietary/product/app/embms/embms.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "imssettings",
-	owner: "realme",
-	apk: "proprietary/product/app/imssettings/imssettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -393,6 +212,6 @@ android_app_import {
 dex_import {
 	name: "WfdCommon",
 	owner: "realme",
-	jars: ["proprietary/framework/WfdCommon.jar"],
+	jars: ["proprietary/system/framework/WfdCommon.jar"],
 }
 
