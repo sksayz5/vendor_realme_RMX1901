@@ -10,6 +10,21 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
     vendor/realme/RMX1901/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
     vendor/realme/RMX1901/proprietary/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/audiosphere.jar \
+    vendor/realme/RMX1901/proprietary/odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service \
+    vendor/realme/RMX1901/proprietary/odm/etc/camera/oppo_camera_config.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/oppo_camera_config.xml \
+    vendor/realme/RMX1901/proprietary/odm/etc/init/vendor.oplus.hardware.orms.ormsHalService@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.orms.ormsHalService@1.0-service.rc \
+    vendor/realme/RMX1901/proprietary/odm/etc/orms/orms_permission_config.xml:$(TARGET_COPY_OUT_ODM)/etc/orms/orms_permission_config.xml \
+    vendor/realme/RMX1901/proprietary/odm/lib/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so \
+    vendor/realme/RMX1901/proprietary/odm/lib/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib/libormshalclient.so \
+    vendor/realme/RMX1901/proprietary/odm/lib/libstfaceunlockocl.so:$(TARGET_COPY_OUT_ODM)/lib/libstfaceunlockocl.so \
+    vendor/realme/RMX1901/proprietary/odm/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.orms.ormsHalService@1.0.so \
+    vendor/realme/RMX1901/proprietary/odm/lib/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.orms@1.0.so \
+    vendor/realme/RMX1901/proprietary/odm/lib64/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so \
+    vendor/realme/RMX1901/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
+    vendor/realme/RMX1901/proprietary/odm/lib64/libswresample.so:$(TARGET_COPY_OUT_ODM)/lib64/libswresample.so \
+    vendor/realme/RMX1901/proprietary/odm/lib64/libswscale.so:$(TARGET_COPY_OUT_ODM)/lib64/libswscale.so \
+    vendor/realme/RMX1901/proprietary/odm/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so \
+    vendor/realme/RMX1901/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
     vendor/realme/RMX1901/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
     vendor/realme/RMX1901/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/realme/RMX1901/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
@@ -261,9 +276,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/realme/RMX1901/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/Charming.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Charming.cng \
+    vendor/realme/RMX1901/proprietary/vendor/etc/camera/M_Attribute_Gender_Age_1.0.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_Gender_Age_1.0.model \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/M_Verify_Faster_Common_4.0.0_wp.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Verify_Faster_Common_4.0.0_wp.model \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/arc_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/arc_golden.bin \
-    vendor/realme/RMX1901/proprietary/vendor/etc/camera/attribute.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/attribute.model \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/distortionParams.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/distortionParams.bin \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/faceTpl0.rgb32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/faceTpl0.rgb32 \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/faceTpl1.rgb32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/faceTpl1.rgb32 \
@@ -271,7 +286,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/license.lic \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/mtStereoParams.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mtStereoParams.bin \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/mwStereoParams.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mwStereoParams.bin \
-    vendor/realme/RMX1901/proprietary/vendor/etc/camera/oppo_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_camera_config.xml \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/skinSeg.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/skinSeg.model \
     vendor/realme/RMX1901/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/realme/RMX1901/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -427,6 +441,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/firmware/dbmd4_va_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dbmd4_va_fw.bin \
     vendor/realme/RMX1901/proprietary/vendor/firmware/dpAP_full.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/dpAP_full.mbn \
     vendor/realme/RMX1901/proprietary/vendor/firmware/dpAP_mini.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/dpAP_mini.mbn \
+    vendor/realme/RMX1901/proprietary/vendor/firmware/dpMSA.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/dpMSA.mbn \
     vendor/realme/RMX1901/proprietary/vendor/firmware/fastchg/18041/oppo_vooc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fastchg/18041/oppo_vooc_fw.bin \
     vendor/realme/RMX1901/proprietary/vendor/firmware/goodixfp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b00 \
     vendor/realme/RMX1901/proprietary/vendor/firmware/goodixfp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/goodixfp.b01 \
@@ -538,7 +553,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib/hw/hwcomposer.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.sdm710.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/hw/sensors.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.sdm710.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.gnss@3.0-impl.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
@@ -605,18 +619,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQTEEConnector_vendor.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libSCES.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSCES.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSNPE.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libSNPE_G.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSNPE_G.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libSTDualCamCaptureBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSTDualCamCaptureBokeh.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libSTDualCamPreviewBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSTDualCamPreviewBokeh.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libSTdisp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSTdisp.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX471RmscLibrary.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libSonyIMX519MbrLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX519MbrLibrary.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libSubSystemShutdown.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSubSystemShutdown.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libVDImageAdjustment.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDImageAdjustment.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libVDRTImageAdjustment.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDRTImageAdjustment.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVkLayer_q3dtools.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
@@ -649,7 +656,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib/libblur_channel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblur_channel.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libbokehclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbokehclient.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++_shared.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacertclient.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libcamera_core_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_core_hwi.so \
@@ -675,7 +681,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvface_api.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libdepthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdepthmap.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
@@ -818,6 +823,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
+    vendor/realme/RMX1901/proprietary/vendor/lib/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_registry_skel.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspcom.so \
@@ -830,13 +836,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib/libstblur_capture_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstblur_capture_api.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libstface_fd_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstface_fd_api.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libstface_seg_ocl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstface_seg_ocl.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libstfaceunlockocl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstfaceunlockocl.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-cpu.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/libsymphonypower.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
@@ -900,7 +902,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/rfsa/adsp/libproxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libproxy_skel.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so \
@@ -923,7 +924,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.5.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.commondcs@1.0.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/vendor.oppo.hardware.hypnus@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.oppo.hardware.hypnus@1.0.so \
     vendor/realme/RMX1901/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
@@ -1071,7 +1071,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib64/hw/hwcomposer.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.sdm710.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/hw/sensors.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.sdm710.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.oppo.hardware.camera.oppoHalAssist@1.0-impl.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@3.0-impl.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
@@ -1137,7 +1136,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libPolarrRender.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPolarrRender.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX471RmscLibrary.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
@@ -1183,7 +1181,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libbokehclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbokehclient.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libcamera_core_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_core_hwi.so \
@@ -1208,10 +1205,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libcvface_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvface_api.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_common.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libcvp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_stub.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
@@ -1278,7 +1271,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libnativehelpers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnativehelpers.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_nr_fusion.so \
@@ -1351,8 +1343,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libsnpeml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpeml.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
@@ -1366,12 +1356,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libstface_fd_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstface_fd_api.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libswresample.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswresample.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libswscale.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswscale.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphony-cpu.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/libsymphonypower.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphonypower.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
@@ -1419,7 +1404,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1901/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so \
-    vendor/realme/RMX1901/proprietary/vendor/lib64/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.commondcs@1.0.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.hypnus@1.0.so \
     vendor/realme/RMX1901/proprietary/vendor/lib64/vendor.oppo.hardware.radio.oppoappradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oppo.hardware.radio.oppoappradio@1.0.so \
@@ -1516,4 +1500,5 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
-    android.hardware.neuralnetworks@1.3-service-qti
+    android.hardware.neuralnetworks@1.3-service-qti \
+    manifest_oplus_orms
