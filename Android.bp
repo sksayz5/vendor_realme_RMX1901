@@ -226,6 +226,24 @@ dex_import {
 }
 
 dex_import {
+	name: "QPerformance",
+	owner: "realme",
+	jars: ["proprietary/system/framework/QPerformance.jar"],
+}
+
+dex_import {
+	name: "QXPerformance",
+	owner: "realme",
+	jars: ["proprietary/system/framework/QXPerformance.jar"],
+}
+
+dex_import {
+	name: "UxPerformance",
+	owner: "realme",
+	jars: ["proprietary/system/framework/UxPerformance.jar"],
+}
+
+dex_import {
 	name: "vendor.qti.hardware.data.latency-V1.0-java",
 	owner: "realme",
 	jars: ["proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
@@ -340,6 +358,15 @@ prebuilt_etc_xml {
 	name: "vendor.qti.gnss@3.0-service",
 	owner: "realme",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.hardware.servicetracker@1.2-service",
+	owner: "realme",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
