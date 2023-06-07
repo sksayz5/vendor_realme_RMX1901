@@ -6,9 +6,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/realme/RMX1901
 
 PRODUCT_COPY_FILES += \
-    vendor/realme/RMX1901/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
+    vendor/realme/RMX1901/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/system_ext/etc/permissions/audiosphere.xml \
     vendor/realme/RMX1901/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
     vendor/realme/RMX1901/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
+    vendor/realme/RMX1901/proprietary/system_ext/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/system_ext/framework/audiosphere.jar \
     vendor/realme/RMX1901/proprietary/odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service \
     vendor/realme/RMX1901/proprietary/odm/etc/camera/oppo_camera_config.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/oppo_camera_config.xml \
     vendor/realme/RMX1901/proprietary/odm/etc/init/vendor.oplus.hardware.orms.ormsHalService@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.orms.ormsHalService@1.0-service.rc \

@@ -240,7 +240,7 @@ dex_import {
 dex_import {
 	name: "audiosphere",
 	owner: "realme",
-	jars: ["proprietary/framework/audiosphere.jar"],
+	jars: ["proprietary/system_ext/framework/audiosphere.jar"],
 }
 
 dex_import {
